@@ -119,7 +119,7 @@ assignment_matrix <- tidyr::spread(result, "j", "value", fill = 0) %>%
 
 (cost <- sum(assignment_matrix * c))
 #> [1] 50264
-cost < C
+cost <= C
 #> [1] TRUE
 
 # total value is
